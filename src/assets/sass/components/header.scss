@@ -1,0 +1,27 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: .5rem 0;
+    padding-left: 2.4rem;
+
+    .burger {
+        justify-self: flex-start;
+    }
+
+    .btn {
+        &--burger {
+            width: 5rem;
+            height: 4.4rem;
+        }
+    }
+
+    .logo {
+        justify-self: center;
+    }
+
+    &__contact {
+        justify-self: end;
+        display: flex;
+    }
+}

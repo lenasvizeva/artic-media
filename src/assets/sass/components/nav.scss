@@ -2,22 +2,31 @@
 # Nav
 *------------------*/
 
-nav {
-    background: #333;
-    border-bottom-right-radius: 5px;
-    left: 0;
-    padding: 1rem;
-    position: absolute;
-    top: 0;
+.nav {
+    background: #94C2BD;
+    padding: .9rem;
 
-    ul {
+    &__list {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            margin-right: 4rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 
     li a {
-        color: #f9f9f9;
+        color: $color-main;
+        text-decoration: none;
+        font-weight: 500;
 
         &:hover {
             text-decoration: none;

@@ -3,27 +3,15 @@
 *------------------*/
 
 /*
- * This file includes default variables to get going quickly on a project.
- * File includes:
- * - Base font family
- * - Base font sizes
- * - Heading spacing
- * - Paragraph spacing
- * - Base line height
- * - Base colors
-*/
-
-/*
  * Base font family
 */
 
-$base-font-family: Arial, sans-serif !default;
-
+$base-font-family: 'Nunito', sans-serif !default;
+$head-font-family: 'Futura TS New', sans-serif;
+                                                
 /*
  * Base font sizes
 */
-
-$base-font-size: 16px !default;
 
 $h1-size: 36px !default;
 $h2-size: 28px !default;
@@ -56,3 +44,4 @@ $base-line-height: 1.5 !default;
 
 $color-white: #ffffff !default;
 $color-black: #000000 !default;
+$color-main: #156A75;
