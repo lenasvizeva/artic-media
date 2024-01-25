@@ -1,0 +1,29 @@
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(4, 28rem);
+    gap: 2rem;
+    margin-top: -7.5rem;
+    position: relative;
+}
+
+.tile {
+    position: relative;
+    height: fit-content;
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    &__capture {
+        position: absolute;
+        bottom: 1rem;
+        left: 2rem;
+        color: $color-white;
+        font-size: 2rem;
+        font-family: $head-font-family;
+        max-width: 85%;
+        text-align: left;
+    }
+}
