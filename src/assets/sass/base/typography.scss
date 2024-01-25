@@ -6,9 +6,8 @@
  * Uniform spacing and fonts for headings
 */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
-    // font-family: $head-font-family;
 }
 
 /*
@@ -18,15 +17,19 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: $h1-size;
     line-height: 120%;
+    font-family: $head-font-family;
 }
 
 h2 {
     font-size: $h2-size;
+    line-height: 150%;
+    font-family: $head-font-family;
 }
 
 h3 {
     font-size: $h3-size;
     line-height: 120%;
+    font-family: $head-font-family;
 }
 
 h4 {
