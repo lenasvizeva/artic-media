@@ -61,4 +61,10 @@ button, .btn {
         padding: 1rem 2rem;
         border-radius: 5px;
     }
+
+    &--call {
+        color: $color-main;
+        text-decoration: underline;
+        padding: 0;
+    }
 }

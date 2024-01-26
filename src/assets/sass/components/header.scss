@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
-    padding: .5rem 0;
+    // padding: .5rem 0;
     padding-left: 2.4rem;
 
     .burger {
@@ -25,5 +25,21 @@
     &__contact {
         justify-self: end;
         display: flex;
+        white-space: nowrap; 
+        align-items: center;
+    }
+
+    .tel {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 120%;
+        color: $color-main;
+        margin-right: 1rem;
+    }
+
+    .lang {
+        background-color: $color-main;
+        margin-left: 4rem;
+        padding: 1.7rem 1.5rem;
     }
 }
