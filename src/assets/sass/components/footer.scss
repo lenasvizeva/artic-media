@@ -1,0 +1,124 @@
+.footer {
+    background-color: $color-blue;
+    margin-top: -3rem;
+    padding-top: 6rem;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 22.4rem;
+        height: 4.2rem;
+    }
+
+    .nav {
+        max-width: 60rem;
+        padding: 0;
+
+        &--footer {
+            margin-top: 3rem;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+
+            li {
+                margin-right: 3rem;
+
+                a {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+    .feedback {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        margin: 2rem 0;
+        color: $color-white;
+        
+        .contact {
+            display: flex;
+            
+            &__address {
+                display: flex;
+                flex-direction: column;
+                max-width: 30rem;
+                margin-right: 11.3rem;
+                line-height: 150%;
+                padding-left: 3.4rem;
+                position: relative;
+                margin-left: .3rem;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 1.8rem;
+                    height: 2.3rem;
+                    background-image: url('../img/svg/location.svg');
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    color: $color-white;
+                }
+                .email {
+                    text-decoration: none;
+                    margin: 1rem 0;
+                    color: $color-pale-blue;
+                }
+                .to-map {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .social {
+            display: flex;
+
+            button {
+                padding: 0;
+                margin-right: 2rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &--bottomline {
+            max-width: 118rem;
+            font-size: 1.4rem;
+            padding: 1.7rem 0;
+            margin: 0 auto;
+
+            .copyright {
+                margin-right: 5rem;
+            }
+        }        
+    }
+
+    &__bottomline {
+        border-top: 1px solid $color-pale-blue;
+    }
+
+    a {
+        color: $color-white;
+    }
+}

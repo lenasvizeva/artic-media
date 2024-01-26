@@ -6,6 +6,10 @@
     background: #94C2BD;
     padding: .9rem;
 
+    &--footer {
+        background: transparent;
+    }
+
     &__list {
         list-style-type: none;
         margin: 0;
