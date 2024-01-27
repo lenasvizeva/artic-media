@@ -57,11 +57,11 @@
             }
 
             &.active {
-                color: #94C2BD;
+                color: $color-blue;
             }
 
             &:hover {
-                color: $color-blue;
+                color: $color-second;
             }
         }
     }

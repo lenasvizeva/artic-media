@@ -1,5 +1,5 @@
 .footer {
-    background-color: $color-blue;
+    background-color: $color-second;
     margin-top: -3rem;
     padding-top: 6rem;
 
@@ -31,7 +31,7 @@
                     transition: all .4s ease-in-out;
 
                     &:hover {
-                        color: $color-main;
+                        color: $color-pale-blue;
                     }
                 }
             }
@@ -85,7 +85,7 @@
         transition: all .4s ease-in-out;
 
         &:hover {
-            color: $color-main;
+            color: $color-pale-blue;
         }
     }
 }

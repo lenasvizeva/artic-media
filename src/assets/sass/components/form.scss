@@ -88,6 +88,13 @@
 
                 a {
                     color: $color-white;
+                    padding: 0;
+                    text-decoration: underline;
+                    transition: all .3s ease-in-out;
+                    
+                    &:hover {
+                        color: $color-pale-blue;
+                    }
                 }
             }
         }
