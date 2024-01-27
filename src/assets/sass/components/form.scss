@@ -29,6 +29,10 @@
             border-radius: 5px;
             padding: 1rem 2rem;
             outline: none;
+
+            &::placeholder {
+                color: $color-grey;
+            }
         }
         
         &__checkbox {

@@ -28,6 +28,11 @@
 
                 a {
                     color: $color-white;
+                    transition: all .4s ease-in-out;
+
+                    &:hover {
+                        color: $color-main;
+                    }
                 }
             }
         }
@@ -47,9 +52,14 @@
             button {
                 padding: 0;
                 margin-right: 2rem;
+                transition: all .4s ease-in-out;
 
                 &:last-child {
                     margin-right: 0;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
                 }
             }
         }
@@ -72,6 +82,11 @@
 
     a {
         color: $color-white;
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            color: $color-main;
+        }
     }
 }
 

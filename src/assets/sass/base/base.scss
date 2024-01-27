@@ -32,6 +32,10 @@ body {
     margin: 0 auto;
     font-size: 1.6rem;
     line-height: 2.4rem;
+
+    &.hidden {
+        overflow: hidden;
+    }
 }
 
 .page-width {
@@ -62,11 +66,34 @@ button, .btn {
         line-height: 150%;
         padding: 1rem 2rem;
         border-radius: 5px;
+
+        &:hover {
+            background-color: $color-main;
+        }
     }
 
     &--call {
         color: $color-main;
         text-decoration: underline;
         padding: 0;
+
+        &:hover {
+            color: $color-blue;
+        }
+    }
+
+    &--burger {
+        width: 5rem;
+        height: 4.4rem;
+    }
+
+    &--close {
+        position: absolute;
+        top: 1.2rem;
+        left: 2rem;
+
+        &:hover {
+            transform: rotate(90deg);
+        }
     }
 }

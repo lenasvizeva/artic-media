@@ -8,13 +8,6 @@
         justify-self: flex-start;
     }
 
-    .btn {
-        &--burger {
-            width: 5rem;
-            height: 4.4rem;
-        }
-    }
-
     .logo {
         justify-self: center;
         width: 18.6rem;
@@ -48,6 +41,7 @@
             display: flex;
             color: $color-white;
             cursor: pointer;
+            transition: all .3s ease-in-out;
 
             &::after {
                 content: '|';
@@ -64,6 +58,10 @@
 
             &.active {
                 color: #94C2BD;
+            }
+
+            &:hover {
+                color: $color-blue;
             }
         }
     }

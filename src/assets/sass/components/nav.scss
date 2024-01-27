@@ -42,9 +42,11 @@
         color: $color-main;
         text-decoration: none;
         font-weight: 500;
+        transition: all .4s ease-in-out;
 
         &:hover {
             text-decoration: none;
+            color: $color-white;
         }
     }
 }
