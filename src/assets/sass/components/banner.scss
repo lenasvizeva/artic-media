@@ -19,6 +19,7 @@
 
     &__img {
         width: 100%;
+        height: 100%;
         object-fit: cover;
         position: absolute;
         top: 0;
@@ -56,13 +57,13 @@
     .h1 {
         text-transform: uppercase;
         font-weight: 900;
-        font-family: "Futura New Bold Reg";
+        font-family: $title-font-family;
     }
 
     .h3 {
         margin: 2rem 0;
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         font-weight: 500;
-        font-family: 'Futura-Medium', sans-serif;
+        font-family: $subtitle-font-family, sans-serif;
     }
 }

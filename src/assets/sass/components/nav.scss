@@ -3,11 +3,22 @@
 *------------------*/
 
 .nav {
-    background: #94C2BD;
     padding: .9rem;
 
+    &--header {
+        background: #94C2BD;
+    }
+
+    &--menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+        padding: 0;
+        white-space: nowrap;
+    }
+
     &--footer {
-        background: transparent;
+        margin-top: 3rem;
     }
 
     &__list {

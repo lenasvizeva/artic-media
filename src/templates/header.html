@@ -1,19 +1,23 @@
 <header class="header">
     <div class="burger">
-        <button class="btn btn--burger">
+        <button class="btn btn--burger" onclick="toggleMenu()">
             <img src="./img/svg/burger.svg" alt="burger menu button">
         </button>
     </div>
 
-    <div class="logo">
+    <!-- menu component -->
+    {% include "menu.html" %}
+
+    <a href="#" class="logo">
         <img src="./img/svg/logo.svg" alt="logo" />
-    </div>
+    </a>
 
     <div class="header__contact">
         <span class="tel">8 800 345 45 67</span>
         <button class="btn btn--call">Заказать звонок</button>
         <div class="lang">
-            <span>Ru | En</span>
+            <span class="active">Ru</span>
+            <span>En</span>
         </div>
     </div>
 </header>

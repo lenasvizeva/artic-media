@@ -7,8 +7,16 @@
 */
 
 $base-font-family: 'Nunito', sans-serif !default;
-// $head-font-family: 'Futura TS New', <<Msans-serif;
-$head-font-family: "Futura New Bold Reg";
+$title-font-family: 'Futura New Bold Reg';
+$subtitle-font-family: 'Futura New Medium Reg';
+
+@font-face {
+    font-family: 'Futura New Medium Reg';
+    src: local('Futura New Medium Reg'), local('Futura-New-Medium-Reg'),
+        url('../fonts/FuturaNewMedium-Reg.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
                                                 
 /*
  * Base font sizes
@@ -31,3 +39,4 @@ $color-black: #000000 !default;
 $color-main: #156A75;
 $color-blue: #4B949E;
 $color-pale-blue: #D4E4D9;
+

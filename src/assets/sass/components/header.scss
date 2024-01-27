@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
-    // padding: .5rem 0;
     padding-left: 2.4rem;
 
     .burger {
@@ -20,6 +19,7 @@
         justify-self: center;
         width: 18.6rem;
         height: 3.6rem;
+        outline: none;
     }
 
     &__contact {
@@ -40,6 +40,31 @@
     .lang {
         background-color: $color-main;
         margin-left: 4rem;
-        padding: 1.7rem 1.5rem;
+        padding: 1.5rem;
+        display: flex;
+        font-weight: 500;
+
+        span {
+            display: flex;
+            color: $color-white;
+            cursor: pointer;
+
+            &::after {
+                content: '|';
+                display: block;
+                margin: 0 1.5rem;
+                color: $color-white;
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+
+            &.active {
+                color: #94C2BD;
+            }
+        }
     }
 }

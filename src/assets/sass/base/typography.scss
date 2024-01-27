@@ -17,19 +17,20 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
     font-size: $h1-size;
     line-height: 120%;
-    font-family: $head-font-family;
+    font-family: $title-font-family;
 }
 
 h2 {
     font-size: $h2-size;
     line-height: 150%;
-    font-family: $head-font-family;
+    font-family: $title-font-family;
 }
 
 h3 {
     font-size: $h3-size;
     line-height: 120%;
-    font-family: $head-font-family;
+    font-family: $subtitle-font-family;
+    font-weight: 500;
 }
 
 h4 {
@@ -48,3 +49,5 @@ p {
     font-size: 1.6rem;
     line-height: 140%;
 }
+
+
