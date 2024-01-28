@@ -28,10 +28,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-flow: wrap;
 
         li {
             margin-right: 4rem;
-
+            white-space: nowrap;
+            
             &:last-child {
                 margin-right: 0;
             }

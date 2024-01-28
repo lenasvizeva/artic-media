@@ -6,6 +6,7 @@
 
 .slide {
     position: relative;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 36rem;
@@ -22,15 +23,12 @@
     &__capture {
         position: absolute;
         max-width: 58rem;
-        height: 15rem;
         background-color: $color-white;
         border-radius: 5px;
         padding: 2rem 3rem;
         line-height: 140%;
         display: flex;
         align-items: center;
-        top: 30%;
-        left: calc(50% - 29rem);
     }
 }
 
