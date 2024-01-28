@@ -13,17 +13,14 @@
     <body id="body">
 
         {% include "header.html" %}
-
-        <!-- <div class="nav--header">
-            {% include "nav.html" %}
-        </div> -->
         
-
         {% include "banner.html" %}
 
         {% block content %}{% endblock %}
 
         {% include "footer.html" %}
+
+        {% include "modal.html" %}
 
         <script src="https://unpkg.com/@glidejs/glide@3.6.0/dist/glide.js"></script>
         <script src="js/main.js"></script>

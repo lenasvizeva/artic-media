@@ -1,0 +1,138 @@
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+
+    &.open {
+        display: flex;
+    }
+
+    .wrapper {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        z-index: 30;
+        align-items: center;
+        background-image: url(../img/form_back.webp);
+        background-size: 100% 100%;
+        width: 78rem;
+        height: 43.6rem;
+        padding: 2.6rem 20.5rem;
+        left: calc(48% - 360px);
+        border-radius: 5px;
+
+        .form-title {
+            margin-bottom: 3rem;
+            line-height: 1.7rem;
+        }
+
+        &.active {
+            display: flex;
+        }
+
+        &--finish {
+            background-image: url(../img/finish_back.webp);
+            text-align: center;
+            
+            .form-title {
+                text-transform: uppercase;
+                font-size: 3.5rem;
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                line-height: 1;
+            }            
+        }
+
+        .btn--close {
+            right: 1.5rem;
+            left: auto;
+        }
+
+        p {
+            color: $color-white;
+            font-weight: 500;
+        }
+    }
+
+    .form {
+        width: 37rem;
+
+        &--callback {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem 0;
+
+            .form__checkbox {
+                padding-left: .6rem;
+                align-items: center;
+
+                .checkbox {
+                    margin: 0 5px;
+                }
+
+                .checkmark {
+                    margin: 0 5px;
+                    left: 6px;
+                    top: 0;
+                }
+            
+            }
+        }
+
+        .select {
+            position: relative;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 1.2rem;
+                height: .6rem;
+                background-image: url('../img/svg/arrow.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                top: 2rem;
+                right: 2rem;
+            }
+
+            select {
+                width: 100%;
+                appearance: none;
+                outline: none;
+                height: 4.4rem;
+                border: none;
+                border-radius: 5px;
+                padding: 1rem 2rem;
+                background-color: $color-white;
+                color: $color-grey;
+                cursor: pointer;
+
+                option {
+                    min-height: 4.4rem;
+                    color: $color-grey;
+                    padding: 1rem 2rem;
+
+                    &:active {
+                        background-color: $color-main;
+                    }
+                }
+            }
+        }
+    }
+
+    .overlay {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(44, 44, 44, 0.75);
+        z-index: 15;
+    }
+}
