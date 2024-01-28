@@ -1,6 +1,6 @@
 const gulp = require("gulp");
 const { parallel, series } = require("gulp");
-// const deploy = require('gulp-gh-pages');
+const deploy = require('gulp-gh-pages');
 const imagemin = require("gulp-imagemin");
 const htmlmin = require("gulp-htmlmin");
 const uglify = require("gulp-uglify");

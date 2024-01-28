@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>ArticMedia Test</title>
+        <link href="https://db.onlinewebfonts.com/c/04228ce6698135e3e7891eedbb85cf24?family=Futura+New+Bold+Reg" rel="stylesheet">                
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css">
+        <link rel="stylesheet" href="css/app.css" />
+    </head>
+    <body id="body">
+
+        <header class="header">
+    <div class="header__container">
+        <div class="burger">
+            <button class="btn btn--burger" onclick="toggleMenu()">
+                <img src="./img/svg/burger.svg" alt="burger menu button">
+            </button>
+        </div>
+
+        <!-- menu component -->
+        <div class="menu-wrapper" id="menu">
+
+    <div class="menu">
+
+        <button class="btn btn--close">
+            <img src="./img/svg/cross.svg" alt="close button" onclick="toggleMenu()">
+        </button>
+
+        <div class="page-width">
+            <div class="menu__container">
+
+                <nav class="nav nav--menu">
+                    <ul class="nav__list">
+                        <li><a href="#">GSK rent</a></li>
+                        <li><a href="#">GSK Retreats</a></li>
+                        <li><a href="#">Healths packages</a></li>
+                        <li><a href="#">Vitalica clinic</a></li>
+                    </ul>
+                    <ul class="nav__list">
+                        <li><a href="#">Wellness experts</a></li>
+                        <li><a href="#">Area sightseeing</a></li>
+                        <li><a href="#">Travel insuranse</a></li>
+                        <li><a href="#">Healing partners</a></li>
+                    </ul>
+                
+                    <ul class="nav__list">
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                    <ul class="nav__list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="contact">
+                    
+                    <a href="#" class="logo">
+                        <img src="./img/logo.png" alt="logo" />
+                    </a>
+
+                    <div class="contact__address">
+                        <span class="location">Çağlayan, 2052. Sk. No:43, <br>
+                            07200 Muratpaşa/Antalya, Турция
+                        </span>
+                        <a class="email" href="mailto:halloretreat@gmail.com">halloretreat@gmail.com</a>
+                    </div>
+
+                    <div class="contact__address">
+                        <span class="location">Çağlayan, 2052. Sk. No:43, <br>
+                            07200 Muratpaşa/Antalya, Турция
+                        </span>
+                        <a class="email" href="mailto:halloretreat@gmail.com">halloretreat@gmail.com</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <img class="background" src="./img/menu_back.webp" alt="menu background">
+
+</div>
+
+
+        <a href="#" class="logo">
+            <img src="./img/logo.png" alt="logo" />
+        </a>
+
+        <div class="header__contact">
+            <span class="tel">8 800 345 45 67</span>
+            <button class="btn btn--call" onclick="toggleModal()">Заказать звонок</button>
+            <div class="lang">
+                <span class="active">Ru</span>
+                <span>En</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav--header">
+        <nav class="nav">
+    <ul class="nav__list">
+        <li><a href="#">GSK аренда</a></li>
+        <li><a href="#">GSK фитнес туры</a></li>
+        <li><a href="#">Программы оздоровления</a></li>
+        <li><a href="#">Клиника Vitalica</a></li>
+    </ul>
+</nav>
+
+    </div>
+</header>
+        
+        <div class="banner">
+    <img class="banner__img" src="./img/banner.webp" alt="hero banner">
+
+    <div class="banner__info">
+        <h1 class="h1">AskGskGo — ваш путеводитель в мир исцеления, оздоровления и долголетия</h1>
+        <h3 class="h3">Создайте лучшую версию себя</h3>
+        <button class="btn btn--main">Получить бесплатную консультацию</button>
+    </div>
+
+    <div class="banner__icons">
+        <button class="icon">
+            <img src="./img/svg/call.svg" alt="call icon">
+        </button>
+        <button class="icon">
+            <img src="./img/svg/callback.svg" alt="callback icon">
+        </button>
+        <button class="icon">
+            <img src="./img/svg/chat.svg" alt="chat icon">
+        </button>
+        
+    </div>
+</div>
+
+        
+<div class="main-content">
+    <div class="page-width">
+
+        <div class="tiles">
+    <a href="#" class="tile">
+        <img class="tile__img" src="./img/pic1.webp" alt="promo pic">
+        <span class="tile__capture">GSK аренда</span>
+    </a>
+    <a href="#" class="tile">
+        <img class="tile__img" src="./img/pic2.webp" alt="promo pic">
+        <span class="tile__capture">GSK фитнес туры</span>
+    </a>
+    <a href="#" class="tile">
+        <img class="tile__img" src="./img/pic3.webp" alt="promo pic">
+        <span class="tile__capture">Программы оздоровления</span>
+    </a>
+    <a href="#" class="tile">
+        <img class="tile__img" src="./img/pic4.webp" alt="promo pic">
+        <span class="tile__capture">Клиника Vitalica</span>
+    </a>
+</div>
+
+        <h2 class="h2">Наша компания</h2>
+
+        <div class="slider glide">
+
+    <div class="slider__capture">
+        <p>Мы – увлеченная команда профессионалов в области оздоровления
+            и красоты. Эксперты AskGskGo рекомендуют только те программы оздоровления, которые попробовали и проверили сами, подбирая индивидуальный подход для достижения именно ваших целей<br>
+            и не забывая о соотношении цены и качества.
+        </p>
+    </div>
+
+    <div data-glide-el="track" class="glide__track">
+        <ul class="glide__slides">
+
+            <li class="glide__slide slide">
+                <img class="slide__img" src="./img/slider_1.webp" alt="slider image">
+            </li>
+
+            <li class="glide__slide slide">
+                <img class="slide__img" src="./img/slider_1.webp" alt="slider image">
+            </li>
+
+            <li class="glide__slide slide">
+                <img class="slide__img" src="./img/slider_1.webp" alt="slider image">
+            </li>
+
+            <li class="glide__slide slide">
+                <img class="slide__img" src="./img/slider_1.webp" alt="slider image">
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+        <button class="glide__bullet" data-glide-dir="=0"></button>
+        <button class="glide__bullet" data-glide-dir="=1"></button>
+        <button class="glide__bullet" data-glide-dir="=2"></button>
+        <button class="glide__bullet" data-glide-dir="=3"></button>
+    </div>
+</div>
+
+        <div class="two-column">
+
+    <div class="two-column__left">
+        <p>В партнерстве с Vitalica Wellness (СПА комплекс с программами оздоровления и детокса
+с медицинским сопровождением на территории отеля 5*) мы предлагаем Вам качественный отдых с пользой для здоровья на берегу моря
+в окружении прекрасной и богатой природы Бодрума. Проживание предусмотрено
+в резиденциях, также мы можем забронировать любой номер из представленных в отеле
+по Вашему пожеланию.
+        </p>
+
+        <button class="btn btn--main">Подробнее</button>
+    </div>
+
+    <div class="two-column__right">
+        <img src="./img/video.webp" alt="video">
+    </div>
+
+</div>
+
+        <div class="wrapper">
+    
+    <span class="form-title">Получите бесплатную консультацию</span>
+
+    <form class="form">
+
+        <input type="text" class="form__textfield" id="name" placeholder="Имя" />
+        <input type="text" class="form__textfield" id="email" placeholder="E-mail" />
+        
+        <button class="btn btn--main">Получить бесплатную консультацию</button>
+       
+        <div class="form__checkbox">
+            <input type="checkbox" class="checkbox" id="personal" checked>
+            <span class="checkmark"></span>
+            <label for="personal" class="label">
+                Нажимая на кнопку, я соглашаюсь на обработку персональных данных, с <a href="#">Политикой Конфиденциальности</a> ознакомлен
+            </label>
+        </div>
+    </form>
+</div>
+
+    </div>
+</div>
+
+
+        <footer class="footer">
+    <div class="page-width">
+
+        <div class="footer__container">
+        
+            <a href="#" class="logo">
+                <img src="./img/svg/logo_white.svg" alt="logo white">
+            </a>
+
+            <nav class="nav nav--footer">
+                <ul class="nav__list">
+                    <li><a href="#">Адреса центров</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <ul class="nav__list">
+                    <li><a href="#">Наши эксперты</a></li>
+                    <li><a href="#">Достопримечательности</a></li>
+                    <li><a href="#">Страховка</a></li>
+                    <li><a href="#">Партнеры</a></li>
+                </ul>
+            </nav>
+
+            <div class="feedback">
+
+                <div class="contact">
+
+                    <div class="contact__address">
+                        <span class="location">Çağlayan, 2052. Sk. No:43, <br>
+                            07200 Muratpaşa/Antalya, Турция
+                        </span>
+                        <a class="email" href="mailto:halloretreat@gmail.com">halloretreat@gmail.com</a>
+                        <a class="to-map" href="#">Показать на карте</a>
+                    </div>
+
+                    <div class="contact__address">
+                        <span class="location">Çağlayan, 2052. Sk. No:43, <br>
+                            07200 Muratpaşa/Antalya, Турция
+                        </span>
+                        <a class="email" href="mailto:halloretreat@gmail.com">halloretreat@gmail.com</a>
+                        <a class="to-map" href="#">Показать на карте</a>
+                    </div>
+
+                </div>
+
+                <div class="social">
+                    <button>
+                        <img class="icon" src="./img/svg/fb.svg" alt="facebook icon">
+                    </button>
+                    <button>
+                        <img class="icon" src="./img/svg/callback.svg" alt="callback icon">
+                    </button>
+                    <button>
+                        <img class="icon" src="./img/svg/insta.svg" alt="instagram icon">
+                    </button>
+                    <button>
+                        <img class="icon" src="./img/svg/youtube.svg" alt="youtube icon">
+                    </button>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bottomline">
+
+        <div class="feedback feedback--bottomline">
+
+            <div>
+                <span class="copyright">© 2023 ASKGSKGO Int.</span>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+
+            <span>Сайт разработан <a href="#">ArticMedia</a></span>
+
+        </div>
+
+    </div>
+</footer>
+
+        <div class="modal" id="modal">
+
+    <div class="overlay"></div>
+    
+        <div class="wrapper wrapper--callback active" id="callback-form">
+
+            <button class="btn btn--close">
+                <img src="./img/svg/cross_white.svg" alt="close button" onclick="toggleModal()">
+            </button>
+
+            <h3 class="form-title h3">Заказать звонок</h3>
+            
+            <form class="form form--callback" action="" onsubmit="handleFormSubmit()">
+
+                <input type="text" class="form__textfield" name="name" placeholder="Имя" required/>
+                <input type="text" class="form__textfield" name="email" placeholder="E-mail" required />
+                <input type="text" class="form__textfield" name="phone" placeholder="Телефон" required />
+
+                <div class="select">
+                    <select name="lang" required>
+                        <option value="first">Русский</option>
+                        <option value="second">Английский</option>
+                    </select>
+                </div>
+                
+                <button class="btn btn--main">Заказать</button>
+
+                <div class="form__checkbox">
+                    <input type="checkbox" class="checkbox" id="subscribe" required checked>
+                    <span class="checkmark"></span>
+                    <label for="personal" class="label">
+                        Я согласен получать другие сообщения от AskGskGo HUB.
+                    </label>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="wrapper wrapper--finish" id="finish-form">
+
+            <button class="btn btn--close">
+                <img src="./img/svg/cross_white.svg" alt="close button" onclick="toggleModal()">
+            </button>
+
+            <h1 class="form-title h1">Спасибо</h1>
+
+            <p>Ваша заявка принята.</p> 
+            <p>Мы свяжемся с Вами в ближайшее время!</p>
+            
+        </div>
+</div>
+
+        <script src="https://unpkg.com/@glidejs/glide@3.6.0/dist/glide.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
