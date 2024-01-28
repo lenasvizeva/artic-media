@@ -40,7 +40,7 @@
     bottom: 1rem;
     position: absolute;
     display: flex;
-    bottom: 2rem;
+    bottom: 1rem;
 
     .glide__bullet {
         width: .5rem;
@@ -51,6 +51,10 @@
         border-radius: 50%;
         background-color: $color-white;
         transition: background-color .3s ease-in-out;
+
+        &:last-child {
+            margin-right: 0;
+        }
 
         &--active {
             background-color: $color-blue;

@@ -1,23 +1,29 @@
 <header class="header">
-    <div class="burger">
-        <button class="btn btn--burger" onclick="toggleMenu()">
-            <img src="./img/svg/burger.svg" alt="burger menu button">
-        </button>
+    <div class="header__container">
+        <div class="burger">
+            <button class="btn btn--burger" onclick="toggleMenu()">
+                <img src="./img/svg/burger.svg" alt="burger menu button">
+            </button>
+        </div>
+
+        <!-- menu component -->
+        {% include "menu.html" %}
+
+        <a href="#" class="logo">
+            <img src="./img/svg/logo.svg" alt="logo" />
+        </a>
+
+        <div class="header__contact">
+            <span class="tel">8 800 345 45 67</span>
+            <button class="btn btn--call">Заказать звонок</button>
+            <div class="lang">
+                <span class="active">Ru</span>
+                <span>En</span>
+            </div>
+        </div>
     </div>
 
-    <!-- menu component -->
-    {% include "menu.html" %}
-
-    <a href="#" class="logo">
-        <img src="./img/svg/logo.svg" alt="logo" />
-    </a>
-
-    <div class="header__contact">
-        <span class="tel">8 800 345 45 67</span>
-        <button class="btn btn--call">Заказать звонок</button>
-        <div class="lang">
-            <span class="active">Ru</span>
-            <span>En</span>
-        </div>
+    <div class="nav--header">
+        {% include "nav.html" %}
     </div>
 </header>

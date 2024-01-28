@@ -28,7 +28,7 @@ body {
     min-height: 100vh;
     position: relative;
     width: 100%;
-    // max-width: 144rem;
+    max-width: 144rem;
     margin: 0 auto;
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -76,6 +76,7 @@ button, .btn {
         color: $color-main;
         padding: 0 1px;
         border-bottom: 1px solid $color-main;
+        line-height: 1.3;
 
         &:hover {
             color: $color-second;

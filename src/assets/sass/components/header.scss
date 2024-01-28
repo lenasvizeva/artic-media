@@ -1,8 +1,17 @@
 .header {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    align-items: center;
-    padding-left: 2.4rem;
+    position: fixed;
+    top: 0;
+    z-index: 7;
+    width: 100%;
+    max-width: 144rem;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        padding-left: 2.4rem;
+        background-color: $color-white;
+    }
 
     .burger {
         justify-self: flex-start;
@@ -13,6 +22,7 @@
         width: 18.6rem;
         height: 3.6rem;
         outline: none;
+        margin-right: 2rem;
     }
 
     &__contact {
@@ -27,7 +37,7 @@
         font-size: 2rem;
         line-height: 120%;
         color: $color-main;
-        margin-right: 1rem;
+        margin-right: 2rem;
     }
 
     .lang {
@@ -48,6 +58,9 @@
                 display: block;
                 margin: 0 1.5rem;
                 color: $color-white;
+                font-weight: 400;
+                width: 1px;
+                font-size: 1.8rem;
             }
 
             &:last-child {
